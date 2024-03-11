@@ -29,7 +29,7 @@ interface EpisodeDao {
     @Query("DELETE FROM character_table")
     suspend fun deleteAllCharacters()
 
-    @Query("SELECT * FROM episode_table WHERE name LIKE '%' || :name || '%'")
+    @Query("SELECT * FROM episode_table WHERE name LIKE '%' || :name || '%' OR episode LIKE '%' || :name || '%'")
     suspend fun getDataWithFilterDao(name : String):List<EpisodeEntity>
 
 }
