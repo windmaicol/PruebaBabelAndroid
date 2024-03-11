@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Episodios" android:id="@+id/action_episode" android:icon="@drawable/baseline_video_file_24"/>
+    <item android:title="Personajes" android:id="@+id/action_character" android:icon="@drawable/icon_profile"/>
+
+
+</menu>
